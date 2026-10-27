@@ -1,4 +1,5 @@
 import pygame
+import os
 
 # Inicializando módulos de Pygame
 pygame.init()
@@ -18,4 +19,4 @@ while deve_continuar:
             deve_continuar = False
 
 # Encerrando módulos de Pygame
-pygame.quit()
+os._exit(0)

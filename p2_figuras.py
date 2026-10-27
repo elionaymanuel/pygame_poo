@@ -1,4 +1,5 @@
 import pygame
+import os
 
 # Definindo as cores
 PRETO = (0, 0, 0)
@@ -27,7 +28,7 @@ janela.blit(texto, [30, 150])
 
 # Desenhando figuras
 pygame.draw.line(janela, VERDE, (60, 260), (420, 260), 4)
-pygame.draw.polygon(janela, PRETO, ((191, 206), (236, 277), (156, 277)),0)
+pygame.draw.polygon(janela, PRETO, ((191, 206), (236, 277), (156, 277)),10)
 pygame.draw.circle(janela, AZUL, (300, 50), 20, 0)
 pygame.draw.ellipse(janela, VERMELHO, (400, 250, 40, 80), 1)
 pygame.draw.rect(janela, VERDE, (20, 20, 60, 40), 0)
@@ -45,4 +46,4 @@ while deve_continuar:
         #Condicional para sair do loop
         if event.type == pygame.QUIT:
             deve_continuar = False
-pygame.quit()
+os._exit(0)
